@@ -1,6 +1,9 @@
+This is a couse project (unstrucuted data, Western University) for implementing inverted index with map-reduce. The invereted index is the index created based on the txt file. It could create a database for searching and anlysis purpose.   
+
+
 Instruction on running my program:
 For Part 1, please implement my program using python3. You can implemented it as
-python3 inverted_index.py doc1.txt doc2.txt … . (doc1 and doc2 are just examples.
+python3 inverted_index.py doc1.txt doc2.txt â€¦ . (doc1 and doc2 are just examples.
 And you can add any txt files as you like). It should created a JASON file caeed
 inverted_index.
 For Part 2, please implement my program using python3. Please note, the search2.py
@@ -16,7 +19,7 @@ Then you can run mapper and reducer program by
 hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming2.6.0-mr1-cdh5.12.0.jar -file mapper.py -mapper "python mapper.py" -file
 reducer.py -reducer "python reducer.py" -input /user/cloudera/inputAssignment2 -
 output /user/cloudera/outputAssignment39
-After that, you can save the inverted index by (the output file must name as “result”,
+After that, you can save the inverted index by (the output file must name as â€œresultâ€,
 you cannt change the name):
 hadoop fs -cat /user/cloudera/outputAssignment39/*>result
 The final step is to run: python search3.py. It would ask you to type query or
